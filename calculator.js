@@ -1,13 +1,29 @@
 function sum(a, b) {
-  return;
+  if (a && b > 0) {
+    return a + b;
+  } else if (a || b === 0) {
+    return a || b + 0;
+  } else {
+    return 0;
+  }
 }
 
 function subtract(a, b) {
-  return;
+  if (a && b > 0) {
+    return a - b;
+  } else if (a || b === 0) {
+    return a || b - 0;
+  } else {
+    return 0;
+  }
 }
 
 function divide(a, b) {
-  return;
+  if (b === 0) {
+    throw new Error('You can\'t divide by 0');
+  } else {
+    return a / b;
+  }
 }
 
 function multiply(a, b) {
